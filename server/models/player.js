@@ -3,7 +3,10 @@
 // var bcrypt = require('bcrypt'),
 //     Mongo  = require('mongodb');
 
-function Player(){
+function Player(o){
+  this.name = o.name;
+  this.coins = o.coins;
+  this.stars = o.stars;
 }
 
 Object.defineProperty(Player, 'collection', {

@@ -1,0 +1,4 @@
+{
+  "players" : [{"name": "aa", "coins": 22, "stars": 2}, {"name": "bb", "coins": 33, "stars": 3}],
+  "winner" : null
+}

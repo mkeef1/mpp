@@ -3,12 +3,12 @@
 'use strict';
 
 var expect    = require('chai').expect,
-    Player    = require('../../server/models/player'),
+    Game      = require('../../server/models/game'),
     dbConnect = require('../../server/lib/mongodb'),
     cp        = require('child_process'),
     db        = 'mongodb://localhost/mpp-test';
 
-describe('Player', function(){
+describe('Game', function(){
   before(function(done){
     dbConnect(db, function(){
       done();
@@ -22,15 +22,16 @@ describe('Player', function(){
   });
 
   describe('constructor', function(){
-    it('should create a new Player object', function(){
-      var p = new Player({name:'a', coins:1, stars:1});
-      expect(p).to.be.instanceof(Player);
+    it('should create a new Game object', function(){
+      var p = new Game({players:[{name:'a', coins:1, stars:1}, {name:'b', coins:2, stars:2}, {name:'c', coins:3, stars:3}]});
+      expect(p).to.be.instanceof(Game);
     });
   });
-  describe('.add', function(){
-    it('should add a player', function(done){
-      Player.add({name:'Jimmy', coins:33, stars:11}, function(err, player){
-        expect(player).to.be.ok;
+
+  describe('.create', function(){
+    it('should create a new game', function(done){
+      Game.create({players:[{name:'a', coins:1, stars:1}, {name:'b', coins:2, stars:2}, {name:'c', coins:3, stars:3}]}, function(err, game){
+        expect(game).to.be.ok;
         done();
       });
     });

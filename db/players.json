@@ -1,0 +1,11 @@
+{
+  "name" : "Tom",
+  "coins" : 30,
+  "stars" : 2
+},
+
+{
+  "name" : "Bobo",
+  "coins" : 400,
+  "stars" : 5
+}
