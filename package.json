@@ -1,0 +1,36 @@
+{
+  "name": "mpp",
+  "version": "0.0.0",
+  "description": "Mario Party Party",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkeef1/mpp"
+  },
+  "author": "Matt Keef <mkeef1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkeef1/mpp/issues"
+  },
+  "homepage": "https://github.com/mkeef1/mpp",
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "coveralls": "./node_modules/coveralls/bin/coveralls.js"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "postinstall": "grunt deploy",
+    "test": "mocha test --recursive -R spec --timeout 5000",
+    "syntax": "./node_modules/grunt-cli/bin/grunt build",
+    "coveralls": "mocha test --recursive -r blanket -R mocha-lcov-reporter | coveralls"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "/server/"
+    }
+  }
+}
