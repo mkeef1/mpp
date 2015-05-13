@@ -1,0 +1,46 @@
+{
+  "_id" : {"$oid":"b00000000000000000000001"},
+  "round" : 1,
+  "title" : "Shy Guy Says",
+  "instructions":
+    "Do everything the moderator says.  If you do something wrong you're out.
+    Listen to Shy Guy (Simon), and be the last one in to win!"
+},
+
+{
+  "_id" : {"$oid":"b00000000000000000000002"},
+  "round" : 2,
+  "title" : "Bobbing for Blood Types",
+  "instructions":
+    "Each player must kneel with his/her knees outside the pool and his/her hands inside.
+    Use the tape stuck to your forehead to snag your own blood type (color balloon) and be
+    the first to gather all your drops!  * Only use your hands to take the balloon off your head. *"
+},
+
+{
+  "_id" : {"$oid":"b00000000000000000000003"},
+  "round" : 2,
+  "title" : "Memory Matching",
+  "instructions":
+    "Flip over the cards to find the matching pairs.  Pay close attention to where the cards are to collect
+    the most pairs and win."
+},
+
+{
+  "_id" : {"$oid":"b00000000000000000000004"},
+  "round" : 5,
+  "title" : "Boo's Baskets",
+  "instructions":
+    "Players 2 and 4 will hold the hoop while player 1 makes a shot of his/her choice.  Player 3 will try and make it and
+    if he/she misses it's the letter 'B'.  Then it's 2 and 4's turn to shoot.  It's the classic game of horse but spelling
+    'Boo' instead!"
+},
+
+{
+  "_id" : {"$oid":"b00000000000000000000005"},
+  "round" : 5,
+  "title" : "Beer Bottle Bowling",
+  "instructions":
+    "Each player will take turns rolling the ball at 10 pins.  The player with the most pins down in one roll wins.
+    If there is a tie roll again until a winner is decided."
+}
